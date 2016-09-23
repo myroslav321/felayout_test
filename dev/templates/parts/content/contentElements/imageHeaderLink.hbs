@@ -10,8 +10,8 @@
       {{else}}
           <h3 class="img-header-link__header">{{header}}</h3>
       {{/if}}
-      {{#if this.textFirst}}
-          <p class="img-header-link__p">{{textFirst}}</p>
+      {{#if bodytext}}
+          <p class="img-header-link__p">{{bodytext}}</p>
           <hr class="img-header-link__divider">
       {{/if}}
       {{#if this.textSecond}}
@@ -19,14 +19,14 @@
           <hr class="img-header-link__divider">
       {{/if}}
       <div class="img-header-link__linksblock">
-        {{#if this.linkNameFirst}}
-            <a class="img-header-link__link" title="{{linkNameFirst}}" href="{{#if this.linkNameFirst}}{{linkNameFirst__link}}{{else}}#{{/if}}"><span class="img-header-link__link-icon icons icon-{{linkIconName}}"></span>{{linkNameFirst}}</a>
+        {{#if this.linkFirst}}
+            <a class="img-header-link__link" title="{{linkFirst}}" href="{{#if this.linkFirst}}{{linkFirst__link}}{{else}}#{{/if}}"><span class="img-header-link__link-icon icons icon-{{linkIconName}}"></span>{{linkFirst}}</a>
         {{/if}}
-        {{#if this.linkNameSecond}}
-            <a class="img-header-link__link" title="{{linkNameSecond}}" href="{{#if this.linkNameSecond}}{{linkNameSecond__link}}{{else}}#{{/if}}"><span class="img-header-link__link-icon icons icon-{{linkIconName}}"></span>{{linkNameSecond}}</a>
+        {{#if this.linkSecond}}
+            <a class="img-header-link__link" title="{{linkSecond}}" href="{{#if this.linkSecond}}{{linkSecond__link}}{{else}}#{{/if}}"><span class="img-header-link__link-icon icons icon-{{linkIconName}}"></span>{{linkSecond}}</a>
         {{/if}}
-        {{#if this.linkNameThird}}
-            <a class="img-header-link__link" title="{{linkNameThird}}" href="{{#if this.linkNameThird}}{{linkNameThird__link}}{{else}}#{{/if}}"><span class="img-header-link__link-icon icons icon-{{linkIconName}}"></span>{{linkNameThird}}</a>
+        {{#if this.linkThird}}
+            <a class="img-header-link__link" title="{{linkThird}}" href="{{#if this.linkThird}}{{linkThird__link}}{{else}}#{{/if}}"><span class="img-header-link__link-icon icons icon-{{linkIconName}}"></span>{{linkThird}}</a>
         {{/if}}
       </div>
   </div>
